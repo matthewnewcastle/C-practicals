@@ -9,6 +9,13 @@ void print(char string[])
     printf("%s\n", string);
 }
 
+int getValidChoice();
+
+void optionCircle();
+void optionSquare();
+void optionRectangle();
+void optionTriangle();
+
 int main(int argc, char const *argv[])
 {
     int choice;
@@ -34,12 +41,16 @@ int main(int argc, char const *argv[])
     switch (choice)
     {
     case 1: // Circle
+        optionCircle();
         break;
     case 2: // Square
+        optionSquare();
         break;
     case 3: // Rectangle
+        optionRectangle();
         break;
     case 4: // Triangle
+        optionTriangle();
         break;
     default:
         break;
