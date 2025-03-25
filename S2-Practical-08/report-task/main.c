@@ -102,40 +102,40 @@ int *createKArray(int *m, int mSize, int *n, int nSize, int *kSize)
 
 int main()
 {
-    // ============ Create m & n ============ //
+    // ============ Create m & n arrays ============ //
 
-    int mSize = getValidInt("m array size (positive integer): ");
+    int mSize = getValidInt("\nm array size: ");
     while (mSize <= 0) // Ensure the size is positive
     {
         printf("Array size must be a positive integer.\n");
-        mSize = getValidInt("m array size (positive integer): ");
+        mSize = getValidInt("m array size: ");
     }
 
     int *m = createArray(mSize);
-    printf("m = ");
+    printf("\nm = ");
     displayArray(m, mSize);
 
-    int nSize = getValidInt("n array size (positive integer): ");
+    int nSize = getValidInt("\nn array size: ");
     while (nSize <= 0) // Ensure the size is positive
     {
         printf("Array size must be a positive integer.\n");
-        nSize = getValidInt("n array size (positive integer): ");
+        nSize = getValidInt("n array size: ");
     }
 
     int *n = createArray(nSize);
-    printf("n = ");
+    printf("\nn = ");
     displayArray(n, nSize);
 
-    // ============ Create k ============ //
+    // ============ Create k array ============ //
 
     int kSize;
     int *k = createKArray(m, mSize, n, nSize, &kSize);
-    printf("k = ");
+    printf("\nCreated array k = ");
     displayArray(k, kSize);
 
     // ============ Input element and search ============ //
 
-    int element = getValidInt("Enter an int to search for: ");
+    int element = getValidInt("\nEnter an int to search for: ");
     // Check for element in m
 
     // Check for element in n
