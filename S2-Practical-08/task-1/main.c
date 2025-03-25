@@ -51,9 +51,9 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
-void processShape(Shape shape)
+void processShape(const Shape shape)
 {
-    Calculation type = getValidInput(1, 2,
+    const Calculation type = getValidInput(1, 2,
                                      "Calculate area or perimeter?\n"
                                      "  1) Area\n  2) Perimeter");
 
