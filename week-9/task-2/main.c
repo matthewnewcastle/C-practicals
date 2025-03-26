@@ -27,7 +27,6 @@ char *concat_strcat(const char *s1, const char *s2)
 }
 
 /* Concatenates two strings using pointers */
-
 char *concat_pointers(const char *s1, const char *s2)
 {
     int size = 0;
